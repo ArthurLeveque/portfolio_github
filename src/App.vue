@@ -1,6 +1,8 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
+    <router-link to="/">
+      Arthur
+    </router-link>
     <router-link to="/projects">Mes projets</router-link>
   </div>
   <router-view/>
@@ -21,14 +23,26 @@
 
 #nav {
   padding: 30px;
+  background-color: #212121;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: white;
+  text-decoration: none;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+.logo{
+  width: 50px;
+  height: 50px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
 }
 </style>

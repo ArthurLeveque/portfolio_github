@@ -1,12 +1,12 @@
 <template>
-  <router-link :to="{ name: 'Project', params: { project_name: name }}" class="item">
-    <li>
+  <li class="item">
+    <router-link :to="{ name: 'Project', params: { project_name: name }}" class="item">
       <ul>
         <li>{{name}}</li>
         <li>{{created.substr(0,10)}}</li>
       </ul>
-    </li>
-  </router-link>
+    </router-link>
+  </li>
 </template>
 
 <script>
@@ -29,6 +29,5 @@ export default {
     list-style-type: none;
     padding: 30px;
     border: 1px solid black;
-    border-radius: 10px;
   }
 </style>

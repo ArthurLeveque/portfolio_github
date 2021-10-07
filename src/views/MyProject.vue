@@ -1,9 +1,8 @@
 <template>
   <div>
-    <h1>{{project.name}}</h1>
+    <h1><a :href="project.html_url">{{project.name}}</a></h1>
 
     <ul>
-      <li><a :href="project.html_url">Lien</a></li>
       <li>Description : {{project.description != null ? project.description : "Il n'y a pas de description disponible"}}</li>
       <li>Crée le : {{project.created_at}}</li>
       <li>Modifié le : {{project.updated_at}}</li>
@@ -36,4 +35,11 @@
 </script>
 
 <style scoped>
+  h1{
+    margin-bottom: 40px;
+  }
+
+  li{
+    margin-bottom: 20px;
+  }
 </style>
